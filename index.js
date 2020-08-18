@@ -7,7 +7,7 @@ function map(cb,arr){
   return newArr
 }
 
-function reduce(cb,arr, init=0){
+function reduce(cb, arr, init=0){
   let total = init 
   arr.forEach((el)=>{
     total += cb(el) 
