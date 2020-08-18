@@ -9,8 +9,10 @@ function map(arr, cb){
 
 function reduce(arr, cb, init=0){
   let total = init 
-  arr.forEach((el)=>{
-    return total = cb(total,el) 
-  })
+  for(let i = 0; i < arr.length, i++){
+    return total = cb(total,arr[i]) 
+  }
+
+
   return total
 }
