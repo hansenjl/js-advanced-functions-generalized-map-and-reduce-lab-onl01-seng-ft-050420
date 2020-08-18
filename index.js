@@ -7,8 +7,13 @@ function map(arr, cb){
   return newArr
 }
 
-function reduce(arr, cb, init=0){
-  let total = init 
+function reduce(arr, cb, init){
+  let total = arr[0]
+  if(init){
+    total = init 
+  }
+  }
+  
   for(let i=0; i < arr.length; i++){
     total = cb(total,arr[i]) 
     console.log(total)
