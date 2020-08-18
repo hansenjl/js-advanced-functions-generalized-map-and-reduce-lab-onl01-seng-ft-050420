@@ -12,7 +12,6 @@ function reduce(arr, cb, init){
   if(init){
     total = init 
   }
-  }
   
   for(let i=0; i < arr.length; i++){
     total = cb(total,arr[i]) 
