@@ -11,12 +11,14 @@ function reduce(arr, cb, init){
   let total = arr[0]
   if(init){
     total = init 
-  }
-  
-  for(let i=0; i < arr.length; i++){
+  }else{
+    for(let i=0; i < arr.length; i++){
     total = cb(total,arr[i]) 
     console.log(total)
     console.log(arr[i])
   }
+  }
+  
+  
   return total
 }
