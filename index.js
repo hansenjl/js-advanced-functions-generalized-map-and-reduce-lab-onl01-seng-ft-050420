@@ -11,6 +11,7 @@ function reduce(arr, cb, init=0){
   let total = init 
   for(let i=0; i < arr.length; i++){
     total = cb(total,arr[i]) 
+    console.log(total)
   }
   return total
 }
