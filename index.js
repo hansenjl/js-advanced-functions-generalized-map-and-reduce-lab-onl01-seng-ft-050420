@@ -10,7 +10,7 @@ function map(arr, cb){
 function reduce(arr, cb, init=0){
   let total = init 
   arr.forEach((el)=>{
-    total = cb(total,el) 
+    return total = cb(total,el) 
   })
   return total
 }
