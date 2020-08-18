@@ -1,5 +1,5 @@
 // Add your functions here
-function map(cb,arr){
+function map(arr, cb){
   let newArr = []
   arr.forEach( (el) => {
     newArr.push(cb(el))
@@ -7,7 +7,7 @@ function map(cb,arr){
   return newArr
 }
 
-function reduce(cb, arr, init=0){
+function reduce(arr, cb, init=0){
   let total = init 
   arr.forEach((el)=>{
     total += cb(el) 
